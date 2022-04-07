@@ -30,7 +30,11 @@
 
         methods: {
           toggleClass() {
-            this.isLoading = true;
+            if (this.isLoading === false) {
+              this.isLoading = true;
+            } else {
+              this.isLoading = false;
+            }
           },
         },
       });
